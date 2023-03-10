@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="logo1.jpg" alt="logo"></a>
+            <p>SMART MONEY</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a> </li>
+                <li><a href="about-us.html">ABOUT US</a> </li>
+                <li><a href="contact-us.html">CONTACT US</a> </li>
+            </ul>
+        </nav>
+       
+    </header>
+    <div id="banner">
+        <h1>Contact us</h1>
+    </div>
+    <main>
+        <div class="descricao3">
+            
+            <p>Hello! My name is Josélio Barata and I am the creator of 
+                Smart Money.I am an investor and passionate about finance.</p><br>
+                <p>Hope you are enjoying the content. I would very much like to receive your doubts 
+                    and considerations, so that my work becomes better and more complete.</p><br>
+                <p>Just fill in the fields below to contact me.</p>
+
+
+                <form action="" method="post" id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required> 
+                    
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit" id="send-button">Send</button>
+                </form>                  
+        </div>
+    </main>
+    <script>
+        const contactForm = document.getElementById('contact-form');
+        const sendButton = document.getElementById('send-button');
+        
+        sendButton.addEventListener('click', (event) => {
+            event.preventDefault(); // previne o comportamento padrão do formulário
+            
+            // exibe mensagem de confirmação
+            if (confirm('Message sent successfully')) {
+                // faz algo caso o usuário clique em "OK"
+            }
+        });
+    </script>
+</body>
+</html>
